@@ -1,7 +1,7 @@
 hdworld, a Slip based screensaver that mimics the behaviour of a digital painting
 ======================================================================================
 
-Even though this screen saver works with both xlockmore-gl and xscreensaver, the last one is prefered.
+Even though this screen saver works with both xlockmore-gl and xscreensaver, the last one is preferred.
 
 
 Installation
@@ -9,7 +9,9 @@ Installation
 
 1. Fetch and install xscreensaver or xlockmore (opengl version) from your prefered location/Operative System's packaging method
 2. Download your OS's building chain under xscreensaver/xlockmore-gl. On Debian systems this means:
+
     apt-get source xscreensaver (or xlockmore-gl)
+
 3. Install slip.c into xscreensaver/xlockmore-gl "hacks/" directory
 4. Recompile
 5. Enjoy!
@@ -19,7 +21,14 @@ Configuration
 -------------
 
 This is handled by your screensaver daemon, but the following should work on both cases:
+
     slip -root -delay 100000 -count 17
+
+
+Known Issues
+------------
+
+It has been reported that under certain high CPU loads the transitioning effects are degraded significantly, this is just eventual and self-healing.
 
 
 License
